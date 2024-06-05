@@ -13,3 +13,10 @@ rather than as numerical values. This means that the bucket indices must be enco
 easily learn different rules for different ranges of this feature value. Another approach to transforming multimodal distributions is to add a feature for each of the modes (at least the main ones). The similarity
 measure is typically computed using a radial basis function (RBF)—any function that depends only on the distance between the input value and a fixed point. The most commonly used RBF is the Gaussian RBF, whose output
 value decays exponentially as the input value moves away from the fixed point.
+
+## Summary of RNNs, LSTMs, GRUs, and deep RNNs in one line each:
+
+* Recurrent Neural Networks (RNNs): Basic neural network architecture with connections between units forming directed cycles, suitable for sequential data processing.
+* Long Short-Term Memory (LSTM) Networks: RNN architecture with specialized memory cells and gating mechanisms to capture long-term dependencies more effectively.
+* Gated Recurrent Units (GRUs): Simplified RNN variant with fewer parameters than LSTMs, featuring update and reset gates to control information flow.
+* Deep Recurrent Neural Networks (RNNs): Extension of RNN architecture with multiple recurrent layers stacked hierarchically, allowing for learning complex hierarchical representations of sequential data.
