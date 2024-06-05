@@ -1,5 +1,17 @@
 # DL_project
 
+## Step of project
+
+The following topics were covered in this project:
+
+* Splitting a dataset into training, validation & test sets
+* Filling/imputing missing values in numeric columns
+* Scaling numeric features to a (0,1) range
+* Encoding categorical columns as one-hot vectors
+* Training and interpreting model
+* Overfitting & hyperparameter tuning
+* Making predictions on test
+* Saving model on disk
 ## ANN Model:
 1. Normalization: It can be used when data does contain outliers. Scikit-Learn provides a transformer called MinMaxScaler for this. It has a feature_range hyperparameter that lets you change the range if, for some 
 reason, you don’t want 0–1 (e.g., neural networks work best with zero-mean inputs, so a range of –1 to 1 is preferable).
@@ -20,3 +32,16 @@ value decays exponentially as the input value moves away from the fixed point.
 * Long Short-Term Memory (LSTM) Networks: RNN architecture with specialized memory cells and gating mechanisms to capture long-term dependencies more effectively.
 * Gated Recurrent Units (GRUs): Simplified RNN variant with fewer parameters than LSTMs, featuring update and reset gates to control information flow.
 * Deep Recurrent Neural Networks (RNNs): Extension of RNN architecture with multiple recurrent layers stacked hierarchically, allowing for learning complex hierarchical representations of sequential data.
+
+
+## Support Vector Machine Terminology
+
+* Hyperplane: Hyperplane is the decision boundary that is used to separate the data points of different classes in a feature space. In the case of linear classifications, it will be a linear equation i.e. wx+b = 0.
+* Support Vectors: Support vectors are the closest data points to the hyperplane, which plays a critical role in deciding the hyperplane and margin. 
+* Margin: Margin is the distance between the support vector and hyperplane. The main objective of the support vector machine algorithm is to maximize the margin.  The wider margin indicates better classification performance.
+* Kernel: Kernel is the mathematical function, which is used in SVM to map the original input data points into high-dimensional feature spaces, so, that the hyperplane can be easily found out even if the data points are not linearly separable in the original input space. Some of the common kernel functions are linear, polynomial, radial basis function(RBF), and sigmoid.
+* Hard Margin: The maximum-margin hyperplane or the hard margin hyperplane is a hyperplane that properly separates the data points of different categories without any misclassifications.
+* Soft Margin: When the data is not perfectly separable or contains outliers, SVM permits a soft margin technique. Each data point has a slack variable introduced by the soft-margin SVM formulation, which softens the strict margin requirement and permits certain misclassifications or violations. It discovers a compromise between increasing the margin and reducing violations.
+* C: Margin maximization and misclassification fines are balanced by the regularisation parameter C in SVM. The penalty for going over the margin or misclassifying data items is decided by it. A stricter penalty is imposed with a greater value of C, which results in a smaller margin and perhaps fewer misclassifications.
+* Hinge Loss: A typical loss function in SVMs is hinge loss. It punishes incorrect classifications or margin violations. The objective function in SVM is frequently formed by combining it with the regularisation term.
+* Dual Problem: A dual Problem of the optimization problem that requires locating the Lagrange multipliers related to the support vectors can be used to solve SVM. The dual formulation enables the use of kernel tricks and more effective computing.
